@@ -1,8 +1,12 @@
+# This script processes PDF files in a specified input folder, creating OCR (Optical Character Recognition) versions 
+# in an output folder. It uses ocrmypdf to add a searchable text layer to PDFs, skipping any files that have 
+# already been processed or are larger than 10 megapixels. The script maintains the original filename with '_OCR' appended.
+
 #!/bin/bash
 
 # Define the input and output folder paths
-input_folder='/Users/isaackendall/Library/CloudStorage/GoogleDrive-where.izzy@gmail.com/My Drive/03 - Property/Commercial Property /211 Devon Street'
-output_folder='/Users/isaackendall/Library/CloudStorage/GoogleDrive-where.izzy@gmail.com/My Drive/03 - Property/Commercial Property /211 Devon Street/OCR'
+input_folder='some_file_path'
+output_folder='some_file_path'
 
 # Create the output folder if it doesn't exist
 mkdir -p "$output_folder"
